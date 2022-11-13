@@ -1,0 +1,93 @@
+body{
+    background:black;
+    margin:0;
+  }
+#canvas{
+    background:#000;
+    height: 90vh;
+    width: 100%;
+  }
+
+.neon{
+    text-align: center;
+}
+
+.neon a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.neon a:hover {
+    color: rgb(255, 175, 175);
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.952), 0 0 40px rgba(255, 0, 0, 0.952), 0 0 80px rgba(255, 0, 0, 0.952);
+    transition-delay: 1s;
+}
+
+.neon a span {
+    position: absolute;
+    display: block;
+}
+
+.neon a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(255, 0, 0));
+}
+
+.neon a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.neon a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(255, 0, 0));
+}
+
+.neon a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.neon a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(255, 0, 0));
+}
+
+.neon a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.neon a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(255, 0, 0));
+}
+
+.neon a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
